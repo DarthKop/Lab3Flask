@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{ title }} - Lab3</title>
+    {% else %}
+    <title>Welcome to Lab3!</title>
+    {% endif %}
+</head>
+<body>
+    <div>Lab3: <a href="/index">Home</a> <a href="/login">Login</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
